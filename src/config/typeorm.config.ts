@@ -10,7 +10,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   database: 'taskmanagement',
   // entities: [path.join(__dirname,'/../**/*.entity.ts')],
   entities: [__dirname + '/../**/*.entity.ts', __dirname + '/../**/*.entity.js' ],
-  // synchronize: true, // In production not recommended
+  synchronize: true, // In production not recommended
 };
 
 console.log(typeOrmConfig.entities);
