@@ -1,2 +1,5 @@
+server: 
+  origin: 'http://ovidiu-task-management.s3-website.eu-west-2.amazonaws.com'
+  
 db: 
   synchronize: false

@@ -15,6 +15,7 @@ export class AuthService {
   ) {}
 
   async signUp(authCredentialsDto: AuthCredentialsDto): Promise<void> {
+    this.logger.verbose(`New signup request. DTO: ${JSON.stringify(authCredentialsDto)}`);
     return this.userRepository.signUp(authCredentialsDto);
   }
 
